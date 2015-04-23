@@ -8,7 +8,8 @@
            (com.google.api.client.http.javanet NetHttpTransport)
            (com.google.api.client.json.jackson JacksonFactory)
            (com.google.gdata.util ServiceException))
-  (:require [clojure.java.browse :as browse]))
+  (:require [clojure.java.browse :as browse]
+            [baum.core :as baum]))
 
 (def config (baum/read-config "~/.cost-analyzer.edn"))
 

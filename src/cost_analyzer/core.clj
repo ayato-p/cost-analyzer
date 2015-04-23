@@ -1,7 +1,6 @@
 (ns cost-analyzer.core
   (:gen-class)
-  (:require [baum.core :refer [baum]]
-            [cost-analyzer.auth :refer [credentials]]
+  (:require [cost-analyzer.auth :refer [credentials]]
             [cost-analyzer.spreadsheet-service :refer [find-worksheet find-spreadsheet sheet->matrix]]))
 
 (defn -main [& args]
